@@ -22,10 +22,10 @@ export default function HomeStack(props) {
     }} >
       <Stack.Screen name={RouteNames.home}
         component={Home}
-        options={{transitionSpecs:{open:TransitionSpecs.forModalPresentationIOS,close:TransitionSpecs.forModalPresentationIOS}, title: "GameZone", headerLeft: HeaderLeft(navigation)}} />
+        options={ {title: "GameZone", headerLeft: HeaderLeft(navigation)}} />
       <Stack.Screen name={RouteNames.ReviewDetails}
         component={ReviewDetails}
-        options={{transitionSpecs:{open:config,close:config}, title: "Review Details",swipeEnabled:false,gestureEnabled:false}}   />
+        options={{ title: "Review Details",swipeEnabled:false,gestureEnabled:false}}   />
 
     </Stack.Navigator>
 
